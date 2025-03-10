@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AdviseMe - Atmospheric Water Generation</title>
+    <link rel="stylesheet" href="styles/main.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <script>
+        // Check authentication before page loads
+        if (!sessionStorage.getItem('authenticated')) {
+            window.location.href = 'index.html';
+        }
+    </script>
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="main-nav">
+        <div class="nav-container">
+            <div class="logo">
+                <img src="assets/icons/Logo Adviseme.jpg" alt="AdviseMe Logo">
+            </div>
+            <ul class="nav-links">
+                <li><a href="#technology">Technology</a></li>
+                <li><a href="#products">Products</a></li>
+                <li><a href="#impact">Impact</a></li>
+                <li><a href="#about">About</a></li>
+                <li class="cta-button"><a href="#contact">Contact Us</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-video">
+            <video autoplay muted loop playsinline>
+                <source src="assets/Videos/20250310_1835_Innovative Water Generation_simple_compose_01jp0hzhzpetzb2t027ab7kyzt.mp4" type="video/mp4">
+            </video>
+            <div class="video-overlay"></div>
+        </div>
+        <div class="hero-content">
+            <h1>Turning Air into Clean Water</h1>
+            <p>Revolutionizing water generation through sustainable technology</p>
+            <div class="hero-cta">
+                <a href="#products" class="primary-button">Explore Our Products</a>
+                <a href="#impact" class="secondary-button">See Our Impact</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Impact Counter -->
+    <section class="impact-counter">
+        <div class="counter-container">
+            <div class="counter-item">
+                <span class="counter" data-target="2000000000">2 billion</span>
+                <span class="counter-label">People Without Clean Water</span>
+            </div>
+            <div class="counter-item">
+                <span class="counter" data-target="10000">up to 10.000</span>
+                <span class="counter-label">Liters Daily Production per machine</span>
+            </div>
+            <div class="counter-item">
+                <span class="counter" data-target="100">100</span>
+                <span class="counter-label">% Sustainable</span>
+            </div>
+        </div>
+    </section>
+
+    <!-- Technology Section -->
+    <section id="technology" class="technology">
+        <h2>Our Technology</h2>
+        <div class="tech-grid">
+            <div class="tech-card">
+                <div class="tech-icon">
+                    <i class="fas fa-leaf"></i>
+                </div>
+                <h3>Patented Condensation</h3>
+                <p>Advanced mechanism that efficiently extracts and purifies water from air</p>
+            </div>
+            <div class="tech-card">
+                <div class="tech-icon">
+                    <i class="fas fa-solar-panel"></i>
+                </div>
+                <h3>Solar Powered</h3>
+                <p>Energy-efficient design with solar integration for off-grid solutions</p>
+            </div>
+            <div class="tech-card">
+                <div class="tech-icon">
+                    <i class="fas fa-cogs"></i>
+                </div>
+                <h3>Modular Design</h3>
+                <p>Scalable architecture adaptable to various needs and environments</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Products Section -->
+    <section id="products" class="products">
+        <h2>Our Products</h2>
+        <div class="product-grid">
+            <div class="product-card">
+                <div class="product-image">
+                    <img src="assets/images/product 2.jpg" alt="Model 1 - 33L/day">
+                </div>
+                <div class="product-content">
+                    <h3>Model 1 - 33L/day</h3>
+                    <p>Perfect for small households, rural areas, and emergency situations</p>
+                    <ul class="product-features">
+                        <li>Compact design</li>
+                        <li>Ideal for individual use</li>
+                        <li>Emergency response ready</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="product-card">
+                <div class="product-image">
+                    <img src="assets/images/Product and Founder.jpg" alt="Model 2 - 2,000L/day">
+                </div>
+                <div class="product-content">
+                    <h3>Model 2 - 2,000L/day</h3>
+                    <p>Designed for mid-sized communities and businesses</p>
+                    <ul class="product-features">
+                        <li>Community-scale solution</li>
+                        <li>Business operations ready</li>
+                        <li>Balanced efficiency</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="product-card">
+                <div class="product-image">
+                    <img src="assets/images/industrial.jpg" alt="Model 3 - 10,000L/day">
+                </div>
+                <div class="product-content">
+                    <h3>Model 3 - 10,000L/day</h3>
+                    <p>Large-scale solution for towns, industrial use, and agriculture</p>
+                    <ul class="product-features">
+                        <li>Industrial capacity</li>
+                        <li>Agricultural support</li>
+                        <li>Municipal scale</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about">
+        <h2>About Us</h2>
+        <div class="about-content">
+            <div class="about-image">
+                <img src="assets/images/Founder.jpg" alt="Lorenzo Paganelli - CEO">
+            </div>
+            <div class="about-text">
+                <h3>Our Leadership</h3>
+                <p>Led by CEO Lorenzo Paganelli, with over 15 years of experience in sales and AI projects, AdviseMe is committed to revolutionizing water generation through sustainable technology.</p>
+                <div class="about-details">
+                    <h4>Our Vision</h4>
+                    <p>To provide sustainable water solutions that address the global water crisis through innovative technology and scalable solutions.</p>
+                    <h4>Our Mission</h4>
+                    <p>Revolutionizing water generation by turning air into clean drinking water through sustainable technology.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Impact Section -->
+    <section id="impact" class="impact">
+        <h2>Our Impact</h2>
+        <div class="impact-grid">
+            <div class="impact-card">
+                <div class="impact-icon">
+                    <i class="fas fa-globe"></i>
+                </div>
+                <h3>Global Reach</h3>
+                <p>Operating in water-scarce regions worldwide, with expansion plans for U.S. & Europe</p>
+            </div>
+            <div class="impact-card">
+                <div class="impact-icon">
+                    <i class="fas fa-handshake"></i>
+                </div>
+                <h3>Strategic Partnerships</h3>
+                <p>Collaborating with governments, NGOs, and corporations for maximum impact</p>
+            </div>
+            <div class="impact-card">
+                <div class="impact-icon">
+                    <i class="fas fa-industry"></i>
+                </div>
+                <h3>Local Production</h3>
+                <p>Manufacturing in Tuscany & Lombardy, with components from across Italy</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <h2>Join Our Mission</h2>
+        <div class="contact-content">
+            <p>Be part of the solution to the global water crisis</p>
+            <form class="contact-form" action="mailto:lorenzo.paganelli@adviseme.it" method="post" enctype="text/plain">
+                <div class="form-group">
+                    <input type="text" name="name" placeholder="Your Name" required>
+                </div>
+                <div class="form-group">
+                    <input type="email" name="email" placeholder="Your Email" required>
+                </div>
+                <div class="form-group">
+                    <textarea name="message" placeholder="Your Message" required></textarea>
+                </div>
+                <div class="contact-cta">
+                    <button type="submit" class="primary-button">Send Message</button>
+                </div>
+            </form>
+            <div class="company-info">
+                <p><i class="fas fa-map-marker-alt"></i> via della Posta 10 (Piazza Affari), 20123 Milano</p>
+                <p><i class="fas fa-envelope"></i> <a href="mailto:lorenzo.paganelli@adviseme.it">lorenzo.paganelli@adviseme.it</a></p>
+                <p><i class="fas fa-building"></i> P.IVA 13085570961</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="main-footer">
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3>AdviseMe</h3>
+                <p>Revolutionizing water generation through sustainable technology</p>
+                <div class="footer-contact">
+                    <p><i class="fas fa-map-marker-alt"></i> via della Posta 10</p>
+                    <p>Piazza Affari, 20123 Milano</p>
+                    <p><i class="fas fa-envelope"></i> lorenzo.paganelli@adviseme.it</p>
+                </div>
+            </div>
+            <div class="footer-section">
+                <h3>Quick Links</h3>
+                <ul>
+                    <li><a href="#technology">Technology</a></li>
+                    <li><a href="#products">Products</a></li>
+                    <li><a href="#impact">Impact</a></li>
+                    <li><a href="#about">About</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h3>Connect</h3>
+                <div class="social-links">
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-facebook"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-linkedin"></i></a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>A2O by AdviseMe Srl © 2024 - P.IVA 13085570961</p>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+</body>
+</html>
