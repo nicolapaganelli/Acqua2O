@@ -17,6 +17,9 @@ const counters = document.querySelectorAll('.counter');
 const speed = 200; // Animation speed in milliseconds
 
 const formatNumber = (number) => {
+    if (number === 10000) {
+        return 'up to 10.000';
+    }
     if (number >= 1000000000) {
         return Math.floor(number / 1000000000) + ' billion';
     } else if (number >= 1000000) {
@@ -28,6 +31,9 @@ const formatNumber = (number) => {
 };
 
 const parseNumber = (text) => {
+    if (text.includes('up to')) {
+        return 10000;
+    }
     if (text.includes('billion')) {
         return parseFloat(text) * 1000000000;
     } else if (text.includes('million')) {
